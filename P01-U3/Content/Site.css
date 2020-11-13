@@ -1,6 +1,8 @@
-﻿body {
-    padding-top: 50px;
+﻿
+body {
+    padding-top: 8px;
     padding-bottom: 20px;
+    background-color:lightblue;
 }
 
 /* Set padding to keep content from hitting the edges */
