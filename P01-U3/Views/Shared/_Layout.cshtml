@@ -16,6 +16,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <div style="font-family:'Agency FB'">
                     @Html.ActionLink("Cátalogo Cine", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
@@ -24,8 +28,12 @@
                     <div class="navbar-collapse collapse">
                         <button type="button" style="text-decoration:none;color:black;" class="btn btn-outline-dark">
                             <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                            <li>@Html.ActionLink("Comedia", "About", "Home")</li>
-                            <li>@Html.ActionLink("Terror", "Contact", "Home")</li>
+                            <li>@Html.ActionLink("Comedia", "Comedia", "Home")</li>
+                            <li>@Html.ActionLink("Terror", "Terror", "Home")</li>
+                            <li>@Html.ActionLink("Drama", "Drama", "Home")</li>
+                            <li>@Html.ActionLink("Románticas", "Romanticas", "Home")</li>
+                            <li>@Html.ActionLink("Acción", "Accion", "Home")</li>
+                            <li>@Html.ActionLink("Infántiles", "Infantiles", "Home")</li>
                         </button>
                     </div>
                 </div>
@@ -36,7 +44,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Siente la Mágia del Cine</p>
+            <p style="text-align:center;">&copy; @DateTime.Now.Year - Siente la Mágia del Cine</p>
         </footer>
     </div>
 
